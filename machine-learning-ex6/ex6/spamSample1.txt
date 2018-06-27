@@ -1,0 +1,8 @@
+This is a real workhorse of a function with a lot of options, but usage is actually pretty simple. It helps set up the structs you need later on.
+
+A tiny bit of history: it used to be that you would use a function called gethostbyname() to do DNS lookups. Then you'd load that information by hand into a struct sockaddr_in, and use that in your calls.
+
+This is no longer necessary, thankfully. (Nor is it desirable, if you want to write code that works for both IPv4 and IPv6!) In these modern times, you now have the function getaddrinfo() that does all kinds of good stuff for you, including DNS and service name lookups, and fills out the structs you need, besides!
+
+Let's take a look!
+
