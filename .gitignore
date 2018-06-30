@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/visualstudiocode
 
+lib/*
+token.mat
 Lecture*.pdf
 
 ### VisualStudioCode ###
